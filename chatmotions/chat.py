@@ -55,17 +55,3 @@ def get_chat(chat_id):
         CHATS[chat_id] = Chat(chat_id)
 
     return CHATS[chat_id]
-
-
-async def chat_coro(request):
-    while True:
-        try:
-            for chat_id, chat in CHATS.items():
-                respond = chat.should_respond()
-                if respond != 0:
-                    log.info('RESPOND {}'.format(respond))
-                    chat.reset_polarity()
-
-        except Exception:
-            log.exception('Error in chat')
-        await asyncio.sleep(15.)

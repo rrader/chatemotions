@@ -1,9 +1,9 @@
+import asyncio
 import logging
 
 from aiohttp import web
 
 from chatmotions.app import create_app
-
 
 logging.basicConfig(level=logging.INFO)
 
