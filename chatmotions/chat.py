@@ -11,8 +11,8 @@ CHATS = {}
 
 
 class Chat:
-    POSITIVE_THRESHOLD = 0.5
-    NEGATIVE_THRESHOLD = -0.5
+    POSITIVE_THRESHOLD = 0.25
+    NEGATIVE_THRESHOLD = -0.25
 
     def __init__(self, chat_id):
         self.chat_id = chat_id
