@@ -19,7 +19,7 @@ def create_app():
     app.router.add_get('/health', health_check)
     app.router.add_post('/message/{chat_id}', message)
     app.router.add_get('/status/{chat_id}', chat_status)
-    app.router.add_get('/reset_should_respond/{chat_id}', reset_should_respond)
+    app.router.add_post('/reset_should_respond/{chat_id}', reset_should_respond)
 
     return app
 
