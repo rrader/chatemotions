@@ -40,7 +40,7 @@ pytest==4.0.1
 pytest-aiohttp==0.3.0
 python-crfsuite==0.9.6
 python-dateutil==2.7.5
-PyYAML==3.13
+PyYAML==5.4
 requests==2.21.0
 russian-tagsets==0.6
 s3transfer==0.1.13
