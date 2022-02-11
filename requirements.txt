@@ -31,7 +31,7 @@ more-itertools==5.0.0
 multidict==4.5.2
 numpy==1.16.0
 pluggy==0.8.1
-protobuf==3.6.1
+protobuf==3.15.0
 py==1.7.0
 pydevd==1.4.0
 pymorphy2==0.8
